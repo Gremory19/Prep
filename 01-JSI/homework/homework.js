@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return  y - x;
+  return  x - y;
 }
 
 function sonIguales(x, y) {
@@ -47,7 +47,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(str1.lenght === str2.lenght){
+  if(str1.length === str2.length){
     return true;
   }
   else{
@@ -128,7 +128,7 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
-  if(letra.lenght > 1) return 'Dato incorrecto';
+  if(letra.length > 1) return 'Dato incorrecto';
 
   if(letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u' ){
     return 'Es vocal';
@@ -210,6 +210,10 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
+  if(numero === 0 || numero === 1){
+    return false;
+  }
+  git
   for(var i = 2; i < numero; i++){
     if(numero % i === 0) return false;
   }
